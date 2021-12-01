@@ -241,3 +241,70 @@ const = async => client.command = message.content === 'slowmode, sm' {
       });
    }
 }
+
+const = async => client.command = message.content === 'mute, Mute' {
+   function => PERMISSIONS () {
+      if user.has_permissions = (manage_roles=true).allowCommandToBeExecuted()
+      allow_command()
+      else {
+         if user.has_permissions = (manage_roles=false);
+         await ctx.send("Sorry but you do not have the right permissions")
+      };
+      const => GiveRole(self.roles, guilds) {
+         await role.give({fetchRole={ctx.role_name="Muted, muted, MUTED"}})
+         await delete.permissions = "send_messages",
+         guild.add.role = to[{mention}] = {
+            await ctx.give.role()
+         };
+      };
+      const => timeout(self.timeout, data{
+         ctx.fetch.time = true({
+            if time = out()
+            self.remove.role = true()
+         });
+         { 5;73;72;827;272 } = role.edit()
+         await role.remove(true);
+         fetch.message.timeout()
+         timeout = timeout() {
+            async => edit()
+            ctx.time = over ()
+            await ctx.send({ctx.user_mentioned}, "Was Unmuted By Default")
+         };
+         time=time()
+      });
+      const => Fetch_Role({
+         discord.guild === fetch.role_name = 'Muted, muted, MUTED' {
+            if role = exists(false);
+            await ctx.guild_create.role = 'Muted' === true()
+         };
+         role = override(true);
+         role.data = [
+            "send_messages": false()
+            ]
+            const => messageArguments() {
+               await ctx.fetch.arguments = [
+                  mentions,
+                  reason,
+                  ]
+                  if time = false();
+                  await ctx.send("Sorry but you did not provide a time");
+                  if time = trure()
+                  await ctx.allow.command();
+                  if mentioned = false();
+                  await ctx.send("Sorry but you did not mention anyone");
+                  if mentioned = true()
+                  await ctx.allow.command();
+                  if reason = false();
+                  await ctx.send("Sorry but you did not provide a reason");
+                  if reason = true();
+                  await ctx.allow.command();
+            }
+            const => newEmbedMessage = {
+               .setTitle("Muted");
+               .setField(name="**__Muted:__**", value={ctx.user_mentioned()});
+               .setField(name="**__Muted By:__**", value={ctx.author_mention()});
+               .setColor("RANDOM")
+            };
+      });
+   };
+}:
