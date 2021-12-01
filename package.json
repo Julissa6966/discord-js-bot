@@ -1,0 +1,26 @@
+{
+   "name": "YOUR BITS NAME",
+   "version": "^1.01",
+   "author": "YOUR NAME",
+   "description": "A Useful Discord Bot",
+   "keywords": [],
+   "scripts": {
+      "nodejs.start -m project":
+      "npm start":
+      "-start":
+   }
+   "dependencies": {
+      "discord": "^0.0.309",
+      "discord.js": "^13.3.1",
+      "ytdl": "^4.9.1",
+      "spotify-searchapi": "^5.6.7",
+      "soundcloud-searchapi": "^6.8.5",
+      "sql": "^15.0",
+      "discordPermissions": "^6.50.8",
+      "discordApis": "^5.45.0",
+      "discordjs-tools": "^4.3.5",
+   }
+   "owner_ids": {
+      "901923169613541477": "Julissa",
+   }
+}
