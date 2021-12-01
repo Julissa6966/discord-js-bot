@@ -308,3 +308,43 @@ const = async => client.command = message.content === 'mute, Mute' {
       });
    };
 };
+
+// Commands (Section 2/3 - Music)
+
+const = async => client.command = message.content === '!play, !Play, !PLAY' {
+   import voice_channel_utils()
+   ytdl === fetch.songs(true);
+   await ytdl.add() {
+      ytdl_songs = source("https://youtube.com/");
+   }
+   const => join_voice_channel() {
+      voice_channel_join()
+      utils.join.voice = true()
+      async = volume({
+         volume = set("50"),
+         vc.utils.add = {volume};
+         data = voice_channel()
+      });
+      const => play_song(data = song{
+         await song.fetch = true()
+         ytdl.play.song ==== true((==))
+         song_data = {
+            {fetch.duration}==!true()
+            {fetch.artist}==!true()
+            {fetch.data}==!true()
+         }
+         name = name() {
+            data = song()
+            fetch = true(=={ctx.fetch.song});
+            ytdl.play.song()
+         };
+      });
+      await newEmbedMessage(self.embed{
+         .setTitle("Now Playing..."),
+         .setField(name="Duration", value={ctx.song_duration}),
+         .setField(name="Artist", value={ctx.song_artist || ctx.uploaded_by}),
+         .setColor("RANDOM"),
+         .setFooter(text="Playing Song.."),
+      })
+   };
+};
