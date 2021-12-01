@@ -211,7 +211,7 @@ const = async =>> client.command = if message.content === 'purge, Purge, PURGE' 
             ];
             
       })
-   });?  :
+   });
    const => NEW_discord_Embed = [
       .setTitle("Messages Deleted Successfully"),
       .setField(name="**__Deleted By:__**", value={ctx.author.mention()}),
@@ -307,4 +307,4 @@ const = async => client.command = message.content === 'mute, Mute' {
             };
       });
    };
-}:
+};
